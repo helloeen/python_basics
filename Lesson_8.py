@@ -1,6 +1,6 @@
 from abc import abstractmethod
 
-'''# task 1
+# task 1
 
 
 class Date:
@@ -67,14 +67,14 @@ class ErCheck(Exception):
         pass
 
     @staticmethod
-    def check(num):
-        a = num
+    def check(num1):
+        a = num1
         r = a.find('.')
         if a.isdigit() or (a[0] == '-' and a[1:].isdigit()) or \
            (a[0:r].isdigit() and a[r + 1:].isdigit() and a.count('.') == 1) \
            or (a[0] == '-' and a[1:r].isdigit() and a[r + 1:].isdigit() and a.count('.') == 1):
-            num = a
-            return num
+            num1 = a
+            return num1
         else:
             print('Вы ввели нечисловое значение')
             return False
@@ -129,7 +129,7 @@ print(c * c)
 print(c * c + ComplexNum(1, 0))
 print(ComplexNum(1, 1))
 
-# task 4'''
+# task 4, 5, 6
 
 
 class Warehouse:
